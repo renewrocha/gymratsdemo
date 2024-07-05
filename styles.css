@@ -1,0 +1,87 @@
+.instructor-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #e91e63; /* Cor rosa para o contorno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
+  }
+  
+  .instructor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 640px) {
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  /* styles.css */
+.primary {
+    background-color: #e91e63;
+    color: #ffffff;
+}
+
+.secondary {
+    background-color: #1ee9a4;
+    color: #000000;
+}
+
+.tertiary {
+    background-color: #63e91e;
+    color: #000000;
+}
+
+.text-primary {
+    color: #e91e63;
+}
+
+.text-secondary {
+    color: #1ee9a4;
+}
+
+.text-tertiary {
+    color: #63e91e;
+}
+
+.bg-primary {
+    background-color: #e91e63;
+}
+
+.bg-secondary {
+    background-color: #1ee9a4;
+}
+
+.bg-tertiary {
+    background-color: #63e91e;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: #e91e63;
+    color: #ffffff;
+}
+
+.button-secondary {
+    background-color: #1ee9a4;
+    color: #000000;
+}
+
+.button-tertiary {
+    background-color: #63e91e;
+    color: #000000;
+}
+.bg-black{
+    background-color: #000000;
+}
+.modal {
+    display: none;
+  }
+  .modal.active {
+    display: flex;
+  }
