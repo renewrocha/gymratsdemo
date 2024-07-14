@@ -26,6 +26,11 @@
       .modal.active {
         display: flex;
       }
+      .gradientText{
+        background-color: #ff83ac;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -35,8 +40,8 @@
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a class="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white" href="#">
-            <img src="./logo.png" alt="Logo" class="h-16 inline">
-            <span id="brandname" class="">GYM RATS</span>
+            <img src="./logoAllBLack.png" alt="Logo" class="h-20 inline">
+            <span id="brandname" class=""></span>
           </a>
         </div>
         <div class="block lg:hidden pr-4">
@@ -61,7 +66,6 @@
           </button>
         </div>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
     </nav>
     <!--Hero-->
     <div class="pt-24 z-10">
@@ -70,10 +74,10 @@
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <p class="uppercase tracking-loose w-full">GymRats</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
-            Emagrecimento e hipertrofia         
+            Apenas um passo da sua melhor versão!       
          </h1>
           <p class="mx-auto lg:mx-0 leading-normal text-1xl mb-8">
-            Um desafio diferente de tudo que você já viu!
+            Emagrecimento e Hipertrofia
           </p>
           <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Participe!
@@ -99,6 +103,168 @@
     </g>
 </svg>
 </div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200, // Duração da animação em milissegundos
+  });
+</script>
+</body>
+</html>
+
+<section class="bg-back border-b py-8">
+  <div class="container mx-auto pt-4 pb-12">
+    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-800">
+      Resultados
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-100 my-0 py-0 rounded-t"></div>
+    </div>
+
+    <div class="relative w-full overflow-hidden">
+      <div class="flex slide" style="transform: translateX(0%);">
+        <!-- Depoimento 1 -->
+        <div class="slide-item w-full flex-shrink-0">
+          <div class="content bg-back shadow-2xl overflow-hidden p-6">
+            <div class="flex rounded justify-center w-full px-6 py-4">
+              <div class="image-container">
+                <img src="./hero.JPG" alt="Antes">
+              </div>
+              <div class="image-container">
+                <img src="./hero.JPG" alt="Depois">
+              </div>
+            </div>
+            <div class="w-auto font-bold text-xl text-white-400 px-6">
+              @aluna
+            </div>
+            <p class="text-white-800 text-base px-6 mb-5">
+              Foi um mes de extrema evolução pra mim, valeu muito a pena desde o primeiro dia, são super atenciosos.
+            </p>
+          </div>
+        </div>
+        <!-- Repita os itens de slide para cada depoimento -->
+        <div class="slide-item w-full flex-shrink-0">
+          <div class="content bg-back shadow-2xl overflow-hidden p-6">
+            <div class="flex rounded justify-center w-full px-6 py-4">
+              <div class="image-container">
+                <img src="./hero.JPG" alt="Antes">
+              </div>
+              <div class="image-container">
+                <img src="./hero.JPG" alt="Depois">
+              </div>
+            </div>
+            <div class="w-auto font-bold text-xl text-white-400 px-6">
+              @aluna2
+            </div>
+            <p class="text-white-800 text-base px-6 mb-5">
+              Depoimento da aluna 2.
+            </p>
+          </div>
+        </div>
+        <!-- Adicione mais slide-items conforme necessário -->
+      </div>
+      <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+          <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white transform rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="16" y1="12" x2="8" y2="12" />
+            <line x1="16" y1="12" x2="12" y2="16" />
+            <line x1="16" y1="12" x2="12" y2="8" />
+          </svg>
+      </button>
+      <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+          <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="12" r="9" />
+            <line x1="16" y1="12" x2="8" y2="12" />
+            <line x1="16" y1="12" x2="12" y2="16" />
+            <line x1="16" y1="12" x2="12" y2="8" />
+          </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<div class="relative z-0 -mt-10 g:-mt-10">
+  
+</div>
+<section class="bg-back py-8">
+  <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+          Benefícios
+      </h2>
+      <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-100 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-4">
+          <!-- Card 1 -->
+          <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
+              <div class="flex-1 bg-back text-white overflow-hidden shadow">
+                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                      <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+                          <line x1="16" y1="8" x2="2" y2="22" />
+                          <line x1="17.5" y1="15" x2="9" y2="15" />
+                      </svg>
+                      <p>Acompanhamento nutricional exclusivo</p>
+                  </div>
+                  <ul class="w-full text-center text-sm">
+                      <li class="py-4 text-white">Nossa nutri vai te acompanhar em todo o seu processo com o planejamento alimentar perfeito para o seu objetivo.</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
+              <div class="flex-1 bg-back text-white overflow-hidden shadow">
+                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                      <svg class="h-8 w-8 text-white inline-block mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                      </svg>
+                      <p>Protocolo de treinamento</p>
+                  </div>
+                  <ul class="w-full text-center text-sm">
+                      <li class="py-4 text-white">Planilhas de treino para você fazer em casa ou na academia. Para iniciante, intermediário e avançado.</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
+              <div class="flex-1 bg-back text-white overflow-hidden shadow">
+                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                      <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                          <line x1="12" y1="18" x2="12.01" y2="18" />
+                      </svg>
+                      <p>Suporte Individualizado</p>
+                  </div>
+                  <ul class="w-full text-center text-sm">
+                      <li class="py-4 text-white">Grupo individualizado no wpp com suporte 24hrs para todas suas dúvidas diretamente com a Lara e sua nutri + grupão com todas as alunas para uma motivar a outra.</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
+              <div class="flex-1 bg-back text-white overflow-hidden shadow">
+                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                      <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="23 7 16 12 23 17 23 7" />
+                          <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                      </svg>
+                      <p>Vídeos explicativos</p>
+                  </div>
+                  <ul class="w-full text-center text-sm">
+                      <li class="py-4 text-white">Conteúdo completo de execução da sua planilha + módulos de mobilidade + treinos hits para potencializar seus objetivos.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="relative z-0 -mt-10 g:-mt-10">
+  
+</div>
 <section class="bg-back border-b py-8">
     <div class=" max-w-5xl mx-auto m-8">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-400">
@@ -115,7 +281,7 @@
                         <img src="./LaraMini.png" alt="Lara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl text-pink-400 font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
                             @lara.ogomes
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -129,7 +295,7 @@
                         <img src="./rari.jpg" alt="Raynara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl text-pink-400 font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
                             @raynara_nutri
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -143,7 +309,7 @@
                         <img src="./fb.jpg" alt="Lara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl text-pink-400 font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
                             @fb.personal_
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -173,92 +339,6 @@
     </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // Duração da animação em milissegundos
-  });
-</script>
-</body>
-</html>
-
-
-<div class="relative z-0 -mt-10 g:-mt-10">
-       
-</div>
-<section class="bg-back py-8">
-    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-            Benefícios
-        </h2>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-100 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-4">
-            <!-- Card 1 -->
-            <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
-                <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                    <div class="p-8 text-2xl font-bold text-center border-b-4 text-pink-400">
-                        <svg class="h-8 w-8 text-pink-400 inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
-                            <line x1="16" y1="8" x2="2" y2="22" />
-                            <line x1="17.5" y1="15" x2="9" y2="15" />
-                        </svg>
-                        <p>Acompanhamento nutricional exclusivo</p>
-                    </div>
-                    <ul class="w-full text-center text-sm">
-                        <li class="py-4 text-white">Nossa nutri vai te acompanhar em todo o seu processo com o planejamento alimentar perfeito para o seu objetivo.</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
-                <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                    <div class="p-8 text-2xl font-bold text-center border-b-4 text-pink-400">
-                        <svg class="h-8 w-8 text-pink-400 inline-block mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
-                        </svg>
-                        <p>Protocolo de treinamento</p>
-                    </div>
-                    <ul class="w-full text-center text-sm">
-                        <li class="py-4 text-white">Planilhas de treino para você fazer em casa ou na academia. Para iniciante, intermediário e avançado.</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
-                <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                    <div class="p-8 text-2xl font-bold text-center border-b-4 text-pink-400">
-                        <svg class="h-8 w-8 text-pink-400 inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-                            <line x1="12" y1="18" x2="12.01" y2="18" />
-                        </svg>
-                        <p>Suporte Individualizado</p>
-                    </div>
-                    <ul class="w-full text-center text-sm">
-                        <li class="py-4 text-white">Grupo individualizado no wpp com suporte 24hrs para todas suas dúvidas diretamente com a Lara e sua nutri + grupão com todas as alunas para uma motivar a outra.</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
-                <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                    <div class="p-8 text-2xl font-bold text-center border-b-4 text-pink-400">
-                        <svg class="h-8 w-8 text-pink-400 inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="23 7 16 12 23 17 23 7" />
-                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
-                        </svg>
-                        <p>Vídeos explicativos</p>
-                    </div>
-                    <ul class="w-full text-center text-sm">
-                        <li class="py-4 text-white">Conteúdo completo de execução da sua planilha + módulos de mobilidade + treinos hits para potencializar seus objetivos.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -266,78 +346,6 @@
        
       </div>
    
-      <section class="gradient border-b py-8">
-        <div class="container mx-auto pt-4 pb-12">
-          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-800">
-            Depoimentos
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-64 opacity-100 my-0 py-0 rounded-t"></div>
-          </div>
-      
-          <div class="relative w-full overflow-hidden">
-            <div class="flex slide" style="transform: translateX(0%);">
-              <!-- Depoimento 1 -->
-              <div class="slide-item w-full flex-shrink-0">
-                <div class="content gradient shadow-2xl overflow-hidden p-6">
-                  <div class="flex rounded justify-center w-full px-6 py-4">
-                    <div class="image-container">
-                      <img src="./hero.JPG" alt="Antes">
-                    </div>
-                    <div class="image-container">
-                      <img src="./hero.JPG" alt="Depois">
-                    </div>
-                  </div>
-                  <div class="w-auto font-bold text-xl text-white-400 px-6">
-                    @aluna
-                  </div>
-                  <p class="text-white-800 text-base px-6 mb-5">
-                    Foi um mes de extrema evolução pra mim, valeu muito a pena desde o primeiro dia, são super atenciosos.
-                  </p>
-                </div>
-              </div>
-              <!-- Repita os itens de slide para cada depoimento -->
-              <div class="slide-item w-full flex-shrink-0">
-                <div class="content gradient shadow-2xl overflow-hidden p-6">
-                  <div class="flex rounded justify-center w-full px-6 py-4">
-                    <div class="image-container">
-                      <img src="./hero.JPG" alt="Antes">
-                    </div>
-                    <div class="image-container">
-                      <img src="./hero.JPG" alt="Depois">
-                    </div>
-                  </div>
-                  <div class="w-auto font-bold text-xl text-white-400 px-6">
-                    @aluna2
-                  </div>
-                  <p class="text-white-800 text-base px-6 mb-5">
-                    Depoimento da aluna 2.
-                  </p>
-                </div>
-              </div>
-              <!-- Adicione mais slide-items conforme necessário -->
-            </div>
-            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
-                <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white transform rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z"/>
-                  <circle cx="12" cy="12" r="9" />
-                  <line x1="16" y1="12" x2="8" y2="12" />
-                  <line x1="16" y1="12" x2="12" y2="16" />
-                  <line x1="16" y1="12" x2="12" y2="8" />
-                </svg>
-            </button>
-            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
-                <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z"/>
-                  <circle cx="12" cy="12" r="9" />
-                  <line x1="16" y1="12" x2="8" y2="12" />
-                  <line x1="16" y1="12" x2="12" y2="16" />
-                  <line x1="16" y1="12" x2="12" y2="8" />
-                </svg>
-            </button>
-          </div>
-        </div>
-      </section>
       
 
     <!-- Modal Structure -->
@@ -443,13 +451,13 @@
  
     <section class="container mx-auto text-center py-6 mb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        Comece agora mesmo!
+        O QUE É O DESAFIO GYM RATS?
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-100 my-0 py-0 rounded-t"></div>
       </div>
-      <h3 class="my-4 text-3xl leading-tight">
-        Torne-se sua melhor versão.
+      <h3 class="my-4 text-base leading-tight">
+        Um desafio diferente de tudo que você já viu, com o maior objetivo de você se tornar sua melhor versão, não só para saude física mas também para sua saude mental. Vamos acompanhar de perto seu processo e sua evolução sem largar a sua mão, sem te deixar sozinha. Vamos te ajudar alcançar seu objetivo sem sofrimentos ou dietas malucas.
 
       </h3>
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -462,7 +470,7 @@
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6 text-black">
             <a class="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-              <img src="./logo.png" alt="Logo" class="h-8 fill-current inline"> GYM RATS
+              <img src="./logoAllBLack.png" alt="Logo" class="h-16 fill-current inline"> 
             </a>
           </div>
           <div class="flex-1">
@@ -520,7 +528,6 @@
           </div>
         </div>
       </div>
-      <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500"></a>
     </footer>
     <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
