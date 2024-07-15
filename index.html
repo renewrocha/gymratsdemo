@@ -15,6 +15,9 @@
 
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
@@ -31,6 +34,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      .fjalla-one-regular {
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -39,7 +47,7 @@
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
-          <a class="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white" href="#">
+          <a class="toggleColour no-underline hover:no-underline fjalla-one-regular text-2xl lg:text-4xl text-white" href="#">
             <img src="./logoAllBLack.png" alt="Logo" class="h-20 inline">
             <span id="brandname" class=""></span>
           </a>
@@ -55,41 +63,45 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-gray-100" id="nav-content">
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Loja</a>
+              <a class="inline-block py-2 px-4 text-black fjalla-one-regular no-underline" href="#">Loja</a>
             </li>
             <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="https://www.instagram.com/desafiogymrats/">Instagram</a>
             </li>
           </ul>
-          <button id="navAction" class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out bg-white text-gray-800">
+          <button id="navAction" class="mx-auto lg:mx-0 hover:underline fjalla-one-regular rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out bg-white text-gray-800">
             Participe
           </button>
         </div>
       </div>
     </nav>
     <!--Hero-->
+    <div>
     <div class="pt-24 z-10">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">GymRats</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
+          <p class="uppercase tracking-loose w-full fjalla-one-regular"></p>
+          <h1 class="my-4 text-4xl fjalla-one-regular leading-tight">
             Apenas um passo da sua melhor versão!       
          </h1>
           <p class="mx-auto lg:mx-0 leading-normal text-1xl mb-8">
             Emagrecimento e Hipertrofia
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Participe!
           </button>
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center z-10">
+        <div class="w-full md:w-3/5 py-0 text-center z-10">
           <img class="w-full md:w-4/5 z-10" src="imagem2.png">
         </div>
       </div>
     </div>
-    <div class="relative z-0 -mt-40 g:-mt-104">
+  </div>
+
+
+  <div class="relative z-0 -mt-40 g:-mt-104">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g transform="translate(-2.000000, 44.000000)" fill="#252525" fill-rule="nonzero">
@@ -103,20 +115,12 @@
     </g>
 </svg>
 </div>
-
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // Duração da animação em milissegundos
-  });
-</script>
 </body>
 </html>
 
 <section class="bg-back border-b py-8">
   <div class="container mx-auto pt-4 pb-12">
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-800">
+    <h2 class="w-full my-2 text-5xl fjalla-one-regular leading-tight text-center text-white-800">
       Resultados
     </h2>
     <div class="w-full mb-4">
@@ -136,7 +140,7 @@
                 <img src="./hero.JPG" alt="Depois">
               </div>
             </div>
-            <div class="w-auto font-bold text-xl text-white-400 px-6">
+            <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
               @aluna
             </div>
             <p class="text-white-800 text-base px-6 mb-5">
@@ -155,7 +159,7 @@
                 <img src="./hero.JPG" alt="Depois">
               </div>
             </div>
-            <div class="w-auto font-bold text-xl text-white-400 px-6">
+            <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
               @aluna2
             </div>
             <p class="text-white-800 text-base px-6 mb-5">
@@ -165,7 +169,7 @@
         </div>
         <!-- Adicione mais slide-items conforme necessário -->
       </div>
-      <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+      <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white fjalla-one-regular p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
           <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white transform rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z"/>
             <circle cx="12" cy="12" r="9" />
@@ -174,7 +178,7 @@
             <line x1="16" y1="12" x2="12" y2="8" />
           </svg>
       </button>
-      <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+      <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white fjalla-one-regular p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
           <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z"/>
             <circle cx="12" cy="12" r="9" />
@@ -191,7 +195,7 @@
 </div>
 <section class="bg-back py-8">
   <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+      <h2 class="w-full my-2 text-5xl fjalla-one-regular leading-tight text-center text-white">
           Benefícios
       </h2>
       <div class="w-full mb-4">
@@ -201,7 +205,7 @@
           <!-- Card 1 -->
           <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
               <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                  <div class="p-8 text-2xl fjalla-one-regular text-center border-b-4 gradientText">
                       <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
                           <line x1="16" y1="8" x2="2" y2="22" />
@@ -217,7 +221,7 @@
           <!-- Card 2 -->
           <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
               <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                  <div class="p-8 text-2xl fjalla-one-regular text-center border-b-4 gradientText">
                       <svg class="h-8 w-8 text-white inline-block mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                       </svg>
@@ -231,7 +235,7 @@
           <!-- Card 3 -->
           <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
               <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                  <div class="p-8 text-2xl fjalla-one-regular text-center border-b-4 gradientText">
                       <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
                           <line x1="12" y1="18" x2="12.01" y2="18" />
@@ -246,7 +250,7 @@
           <!-- Card 4 -->
           <div class="shadow-2xl flex-col w-full lg:w-1/4 mx-auto lg:mx-0 bg-back mt-4">
               <div class="flex-1 bg-back text-white overflow-hidden shadow">
-                  <div class="p-8 text-2xl font-bold text-center border-b-4 gradientText">
+                  <div class="p-8 text-2xl fjalla-one-regular text-center border-b-4 gradientText">
                       <svg class="h-8 w-8 text-white inline-block mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <polygon points="23 7 16 12 23 17 23 7" />
                           <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
@@ -267,7 +271,7 @@
 </div>
 <section class="bg-back border-b py-8">
     <div class=" max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white-400">
+        <h2 class="w-full my-2 text-5xl fjalla-one-regular leading-tight text-center text-white-400">
             Conheça nosso time!
         </h2>
         <div class="w-full mb-4">
@@ -281,7 +285,7 @@
                         <img src="./LaraMini.png" alt="Lara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText fjalla-one-regular leading-none mb-3">
                             @lara.ogomes
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -295,7 +299,7 @@
                         <img src="./rari.jpg" alt="Raynara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText fjalla-one-regular leading-none mb-3">
                             @raynara_nutri
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -309,7 +313,7 @@
                         <img src="./fb.jpg" alt="Lara">
                     </div>
                     <div class="text-center">
-                        <h3 class="text-3xl gradientText font-bold leading-none mb-3">
+                        <h3 class="text-3xl gradientText fjalla-one-regular leading-none mb-3">
                             @fb.personal_
                         </h3>
                         <p class="text-white-600 mb-8">
@@ -317,7 +321,7 @@
                     </div>
                 </div>
             </div>
-            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white fjalla-one-regular p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
                 <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white transform rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <circle cx="12" cy="12" r="9" />
@@ -326,7 +330,7 @@
                   <line x1="16" y1="12" x2="12" y2="8" />
                 </svg>
             </button>
-            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white font-bold p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
+            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white fjalla-one-regular p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
                 <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"/>
                   <circle cx="12" cy="12" r="9" />
@@ -353,7 +357,7 @@
       <div class="bg-white w-11/12 md:max-w-3xl mx-auto rounded shadow-lg z-50 overflow-y-auto">
         <div class="py-4 text-left px-6">
           <div class="flex justify-between items-center pb-3">
-            <p class="text-2xl font-bold">Video Testemunhal</p>
+            <p class="text-2xl fjalla-one-regular">Video Testemunhal</p>
             <div class="modal-close cursor-pointer z-50" onclick="closeModal()">
               <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                 <path d="M14.53 3.47a.75.75 0 0 0-1.06 0L9 7.94 4.53 3.47a.75.75 0 0 0-1.06 1.06L7.94 9l-4.47 4.47a.75.75 0 1 0 1.06 1.06L9 10.06l4.47 4.47a.75.75 0 1 0 1.06-1.06L10.06 9l4.47-4.47a.75.75 0 0 0 0-1.06z"></path>
@@ -371,7 +375,7 @@
       
 <section class="bg-gray-100 py-8">
     <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 class="w-full my-2 text-5xl fjalla-one-regular leading-tight text-center text-gray-800">
         Planos
       </h2>
       <div class="w-full mb-4">
@@ -380,7 +384,7 @@
       <div class="flex justify-center">
         <div class="shadow-2xl flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
           <div class="flex-1 bg-white text-black rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="p-8 text-3xl font-bold text-center border-b-4">
+            <div class="p-8 text-3xl fjalla-one-regular text-center border-b-4">
               Mensal
             </div>
             <ul class="w-full text-center text-sm">
@@ -398,7 +402,7 @@
                 </svg>
                 Protocolo de Treinamento
               </li>
-              <li class="border-b py-4 flex items-center justify-center">
+              <li class="border-b py-4 flex items-center  justify-center">
                 <svg class="h-8 w-8 text-pink-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
                   <line x1="12" y1="18" x2="12.01" y2="18" />
@@ -415,12 +419,12 @@
             </ul>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="w-full pt-6 text-3xl text-black font-bold text-center">
+            <div class="w-full pt-6 text-3xl text-black fjalla-one-regular text-center">
               R$39,99
               <span class="text-base"> </span>
             </div>
             <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Participe
               </button>
             </div>
@@ -450,7 +454,7 @@
     </svg>
  
     <section class="container mx-auto text-center py-6 mb-12">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+      <h2 class="w-full my-2 text-5xl fjalla-one-regular leading-tight text-center text-white">
         O QUE É O DESAFIO GYM RATS?
       </h2>
       <div class="w-full mb-4">
@@ -460,7 +464,7 @@
         Um desafio diferente de tudo que você já viu, com o maior objetivo de você se tornar sua melhor versão, não só para saude física mas também para sua saude mental. Vamos acompanhar de perto seu processo e sua evolução sem largar a sua mão, sem te deixar sozinha. Vamos te ajudar alcançar seu objetivo sem sofrimentos ou dietas malucas.
 
       </h3>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         Participe!
       </button>
     </section>
@@ -469,7 +473,7 @@
       <div class="container mx-auto px-8">
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6 text-black">
-            <a class="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <a class="text-black no-underline hover:no-underline fjalla-one-regular text-2xl lg:text-4xl" href="#">
               <img src="./logoAllBLack.png" alt="Logo" class="h-16 fill-current inline"> 
             </a>
           </div>
