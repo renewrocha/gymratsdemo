@@ -38,6 +38,16 @@
     .body {
       overflow: hidden;
     }
+    /* Adicionado CSS para o link "Produtos" */
+    .mobile-only {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      .mobile-only {
+        display: flex;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -51,8 +61,9 @@
           <span id="brandname" class=""></span>
         </a>
       </div>
-      <div class="block lg:hidden pr-4">
-        <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      <div class="mobile-only pr-4">
+        <a class="inline-block py-2 px-4 text-black fjalla-one-regular no-underline" href="https://loja.gymrats.com.br" target="_blank">Loja</a>
+        <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ml-2">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -62,13 +73,13 @@
       <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-gray-100" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-black fjalla-one-regular no-underline" href="https://www.gymrats.com/loja" target="_blank">Loja</a>
+            <a class="inline-block py-2 px-4 text-black fjalla-one-regular no-underline" href="https://loja.gymrats.com.br" target="_blank">Loja</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="https://www.instagram.com/desafiogymrats/" target="_blank">Instagram</a>
           </li>
         </ul>
-        <button id="navAction" class="mx-auto lg:mx-0 hover:underline fjalla-one-regular rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out bg-white text-gray-800" onclick="window.open('https://www.seusite.com', '_blank')">
+        <button id="navAction" class="mx-auto lg:mx-0 hover:underline fjalla-one-regular rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out bg-white text-gray-800" onclick="window.open('https://chk.eduzz.com/2443936', '_blank')">
           Participe
         </button>
       </div>
@@ -88,7 +99,7 @@
           <p class="mx-auto lg:mx-0 leading-normal text-1xl mb-8">
             Emagrecimento e Hipertrofia
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://www.seusite.com', '_blank')">
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://chk.eduzz.com/2443936', '_blank')">
             Participe!
           </button>
         </div>
@@ -130,14 +141,14 @@
             <div class="content bg-back shadow-2xl overflow-hidden p-6">
               <div class="flex rounded justify-center w-full px-6 py-4">
                 <div class="image-container">
-                  <img src="./antes1.png" alt="Antes">
+                  <img src="./Antes Kathlyn.jpg" alt="Antes">
                 </div>
                 <div class="image-container">
-                  <img src="./depois1.png" alt="Depois">
+                  <img src="./Depois Kathlyn.jpg" alt="Depois">
                 </div>
               </div>
               <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
-                @aluna
+                Kathlyn
               </div>
               <p class="text-white-800 text-base px-6 mb-5">
                 Foi um mes de extrema evolução pra mim, valeu muito a pena desde o primeiro dia, são super atenciosos.
@@ -149,14 +160,14 @@
             <div class="content bg-back shadow-2xl overflow-hidden p-6">
               <div class="flex rounded justify-center w-full px-6 py-4">
                 <div class="image-container">
-                  <img src="./hero.JPG" alt="Antes">
+                  <img src="./Antes Paula.jpg" alt="Antes">
                 </div>
                 <div class="image-container">
-                  <img src="./hero.JPG" alt="Depois">
+                  <img src="./Depois Paula.jpg" alt="Depois">
                 </div>
               </div>
               <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
-                @aluna2
+                Paula
               </div>
               <p class="text-white-800 text-base px-6 mb-5">
                 Depoimento da aluna 2.
@@ -164,6 +175,79 @@
             </div>
           </div>
           <!-- Adicione mais slide-items conforme necessário -->
+          <div class="slide-item w-full flex-shrink-0">
+            <div class="content bg-back shadow-2xl overflow-hidden p-6">
+              <div class="flex rounded justify-center w-full px-6 py-4">
+                <div class="image-container">
+                  <img src="./Antes Karoline.jpg" alt="Antes">
+                </div>
+                <div class="image-container">
+                  <img src="./Depois Karoline.jpg" alt="Depois">
+                </div>
+              </div>
+              <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
+                Karoline
+              </div>
+              <p class="text-white-800 text-base px-6 mb-5">
+                Depoimento da aluna 2.
+              </p>
+            </div>
+          </div>
+          <div class="slide-item w-full flex-shrink-0">
+            <div class="content bg-back shadow-2xl overflow-hidden p-6">
+              <div class="flex rounded justify-center w-full px-6 py-4">
+                <div class="image-container">
+                  <img src="./Antes Amanda.jpg" alt="Antes">
+                </div>
+                <div class="image-container">
+                  <img src="./Depois Amanda.jpg" alt="Depois">
+                </div>
+              </div>
+              <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
+                Amanda
+              </div>
+              <p class="text-white-800 text-base px-6 mb-5">
+                Depoimento da aluna 2.
+              </p>
+            </div>
+          </div>
+          <div class="slide-item w-full flex-shrink-0">
+            <div class="content bg-back shadow-2xl overflow-hidden p-6">
+              <div class="flex rounded justify-center w-full px-6 py-4">
+                <div class="image-container">
+                  <img src="./Antes Irene.jpg" alt="Antes">
+                </div>
+                <div class="image-container">
+                  <img src="./Depois Irene.jpg" alt="Depois">
+                </div>
+              </div>
+              <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
+                Irene
+              </div>
+              <p class="text-white-800 text-base px-6 mb-5">
+                Depoimento da aluna 2.
+              </p>
+            </div>
+            
+          </div>
+          <div class="slide-item w-full flex-shrink-0">
+            <div class="content bg-back shadow-2xl overflow-hidden p-6">
+              <div class="flex rounded justify-center w-full px-6 py-4">
+                <div class="image-container">
+                  <img src="./Antes Lisandra.jpg" alt="Antes">
+                </div>
+                <div class="image-container">
+                  <img src="./Depois Lisandra.jpg" alt="Depois">
+                </div>
+              </div>
+              <div class="w-auto fjalla-one-regular text-xl text-white-400 px-6">
+                Lisandra
+              </div>
+              <p class="text-white-800 text-base px-6 mb-5">
+                Depoimento da aluna 2.
+              </p>
+            </div>
+          </div>
         </div>
         <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 -mt-1.5 bg-pink-500 hover:bg-pink-700 text-white fjalla-one-regular p-1.5 lg:p-2 rounded-full shadow-lg focus:outline-none focus:shadow-outline transition-transform duration-300 ease-in-out">
           <svg class="h-5 w-5 lg:h-6 lg:w-6 text-white transform rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -314,6 +398,7 @@
               <p class="text-white-600 mb-8">
                 Oi, prazer, Felipe. Sou graduado em Educação Física e meu foco é fazer você se apaixonar pelo exercício físico e se cuidar. Vou te dar todo o suporte nos seus treinos de forma dinâmica e com diferentes níveis de intensidade.
               </p>
+              <p>CREF:057732-G/RJ.</p>
             </div>
           </div>
         </div>
@@ -411,7 +496,7 @@
               <span class="text-base"> </span>
             </div>
             <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://www.seusite.com', '_blank')">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://chk.eduzz.com/2443936', '_blank')">
                 Participe
               </button>
             </div>
@@ -449,7 +534,7 @@
     <h3 class="my-4 text-base leading-tight">
       Um desafio diferente de tudo que você já viu, com o maior objetivo de você se tornar sua melhor versão, não só para saude física mas também para sua saude mental. Vamos acompanhar de perto seu processo e sua evolução sem largar a sua mão, sem te deixar sozinha. Vamos te ajudar alcançar seu objetivo sem sofrimentos ou dietas malucas.
     </h3>
-    <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://www.seusite.com', '_blank')">
+    <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 fjalla-one-regular rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" onclick="window.open('https://chk.eduzz.com/2443936', '_blank')">
       Participe!
     </button>
   </section>
@@ -638,5 +723,24 @@
     }
     // ]]>
   </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1395750411108294');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+      <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1395750411108294&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Meta Pixel Code -->
 </body>
 </html>
