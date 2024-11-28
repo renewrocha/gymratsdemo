@@ -90,12 +90,12 @@ body, html {
 }
 
 .left {
-    background-color:#f86b9a;
+    background-color:#4f4f4f;
     ;
 }
 
 .right {
-    background-color: #4a90e2;
+    background-color: #606060;
 }
 
 .menu-item:hover {
@@ -184,3 +184,4 @@ body, html {
         max-height: 20%; /* Reduz o tamanho da logo em dispositivos móveis */
     }
 }
+
