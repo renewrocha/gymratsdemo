@@ -87,6 +87,10 @@
     padding-top: 80%; /* 1:1 Aspect Ratio */
   }
 }
+img[src*="imagem5.png"] {
+  position: relative !important;
+  z-index: -10 !important;
+}
 
 
   
